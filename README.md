@@ -12,6 +12,10 @@ A Python-based FastAPI application that summarizes PDF documents using extractiv
 ```
 docker-compose up --build
 ```
+## Documentation
+```
+http://localhost:8000/docs
+```
 
 ## API Endpoint
 **POST** `/summarize`
@@ -37,6 +41,6 @@ curl -X POST "http://localhost:8000/summarize" \
   -F "topics=Introduction,Conclusion"
 ```
 
-Supported file types: `.pdf`, `.doc`, `.docx`, `.txt`
+Supported file types: `.pdf`, `.docx`, `.txt`, `.html`
 
 
